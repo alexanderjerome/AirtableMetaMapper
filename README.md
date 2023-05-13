@@ -1,5 +1,5 @@
 # AirtableMetaMapper
-Airtable MetaMapper is a tool that maps and connects the current schema of an Airtable database to metadata tables, facilitating the organization and management of table, view, and field metadata.
+Airtable MetaMapper is a tool that maps and connects the current schema of an Airtable database to metadata tables, facilitating the organization and management of table, view, and field metadata. This is a script meant to be used within the Airtable scripting block.
 
 Airtable MetaMapper is a collection of functions designed to simplify the generation of metadata for tables, views, and fields within an Airtable database. With the help of these functions, users can easily extract and organize essential schema information into a structured metadata format.
 Usage
