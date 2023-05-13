@@ -57,7 +57,8 @@ async function createMetadataTables(schema) {
             {name: 'name', type: 'singleLineText'},
             {name: 'id', type: 'singleLineText'},
             {name: 'url', type: 'url'},
-            {name: 'description', type: 'multilineText'}
+            {name: 'description', type: 'multilineText'},
+            { name: 'Schema', type: 'multilineText' } // Add the 'Schema' field
         ]);
     }
     try {
@@ -166,7 +167,9 @@ async function populateMetadataTables(schema, refDict, MTables, MViews, MFields)
                 'id': table.id,
                 'name': table.name,
                 'url': table.url,
-                'description': table.description
+                'description': table.description,
+                'Schema': JSON.stringify(table) // Add the 'Schema' field with the relevant table schema
+
             });
         }
     }
